@@ -1,14 +1,17 @@
-const firstName = 'André';
-const lastName = 'Oliveira';
+let index = 0;
 
-const names = "Felipe, André, João";
+while (index < 10) {
+  console.log("Index é menor do que 10!");
+  // index = index + 1;
+  // index += 1
+  index++;
+}
 
-console.log(`Meu nome é ${firstName.toUpperCase()} ${lastName.toLowerCase()}`);
+const person = {
+  name: "Jane",
+  age: 21,
+};
 
-console.log(names.split(","));
-
-const number = 5;
-
-console.log(number.toString());
-console.log(typeof number.toString());
-
+for (property in person) {
+  console.log(person[property]);
+}
